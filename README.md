@@ -21,7 +21,7 @@ and are automatically rebuilt once a week.
 * Run the container via Podman:
 
   ```bash
-  podman run -it --systemd=true --privileged ghcr.io/hifis-net/centos-systemd:9
+  podman run -it --systemd=true --privileged ghcr.io/hifis-net/centos-systemd:7
   ```
 
 ## Authors
