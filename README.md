@@ -13,8 +13,7 @@ GitHub Package Registry.
 These tags are available. They are updated on changes to the `main` branch
 and are automatically rebuilt once a week.
 
-* `ghcr.io/hifis-net/centos-systemd:9`
-* `ghcr.io/hifis-net/centos-systemd:8`
+* `ghcr.io/hifis-net/centos-systemd:7`
 
 ## How to Use
 
