@@ -17,7 +17,9 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 
 # Install requirements.
 RUN yum makecache fast \
- && yum -y install deltarpm epel-release initscripts \
+ && yum -y install deltarpm epel-release initscripts wget \
+ # Install a systemd version which support cgroupsv2
+ && wget https://copr.fedorainfracloud.org/coprs/jsynacek/systemd-backports-for-centos-7/repo/epel-7/jsynacek-systemd-backports-for-centos-7-epel-7.repo -O /etc/yum.repos.d/jsynacek-systemd-centos-7.repo \
  && yum -y update \
  && yum -y install \
       sudo \
